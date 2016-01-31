@@ -10,5 +10,7 @@ The MYSQL database will contain two tables:
 
 
 To create a fresh set of records for each new payweek, edit crontab for user 'www-data':
+
 user@hostname:~$ sudo crontab -e -u www-data
+
 0 3 * * 4 python /var/www/scripts/create-new-payweek.py
